@@ -2,3 +2,24 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+
+:root {
+  --decor-color: #FF0070;
+  --hover-effect: #ff007066;
+
+  --title-color: #DB00FF;
+  --title-effect-color: #FF0070;
+
+  --accent-color: #FF0070;
+
+  --block-decor-title: #000028;
+  --block-text-color: #F1B2CE;
+  --block-title-color: #FF0070;
+  --bg-color: #000028;
+
+  --main-font: 'IBM Plex mono';
+
+  --font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}

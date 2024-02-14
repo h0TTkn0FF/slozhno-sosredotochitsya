@@ -4,9 +4,62 @@
   переключая тему
 */
 
+:root .theme_light {
+  --decor-color: #353430;
+  --hover-effect: #32312d66;
+
+  --title-color: #FFC2E6;
+  --title-effect-color: #FF0070;
+
+  --accent-color: #FF8DCB;
+
+  --block-decor-title: #353430;
+  --block-text-color: #353430;
+  --block-title-color: #353430;
+  --bg-color: #000028;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --decor-color: #353430;
+    --hover-effect: #32312d66;
+  
+    --title-color: #FFC2E6;
+    --title-effect-color: #FF0070;
+  
+    --accent-color: #FF8DCB;
+  
+    --block-decor-title: #353430;
+    --block-text-color: #353430;
+    --block-title-color: #353430;
+    --bg-color: #FFF1F7;
+  }
+
+  .page.theme_auto {
+    background-image: url(../images/cover-image-light.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .rec-decor {
+    display: none;
+  }
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  
+  background-image: url(../images/cover-image-light.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.theme_light .rec-decor {
+  display: none;
 }
