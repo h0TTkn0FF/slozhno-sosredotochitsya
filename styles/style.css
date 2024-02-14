@@ -11,6 +11,7 @@
   padding: 10px;
 
   background-color: var(--bg-color);
+  background-attachment: fixed;
 }
 
 .title-decor {
@@ -52,6 +53,7 @@
   grid-template-rows: repeat(3, auto);
   row-gap: 55px;
 
+  height: 100%;
   width: 100%;
 }
 
@@ -104,7 +106,6 @@
 
 .header__theme-menu-item {
   width: 70px;
-  height: 26px;
   height: fit-content;
   
   font-family: var(--main-font), Arial, Helvetica, sans-serif;
@@ -250,6 +251,8 @@
   display: grid;
   place-content: center;
   min-height: 650px;
+
+  height: 100%;
 }
 
 @media (width >= 768px) {
